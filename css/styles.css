@@ -410,6 +410,7 @@ body {
 
 .contacts-social-links {
     width: 208px;
+    margin-right: 80px;
 }
 
 .fotter-contact-text {
@@ -447,6 +448,53 @@ body {
 
 .footer-social-link {
     fill: var(--write-logo-footer);
+}
+
+.form-subscribe {}
+
+.footer-form-subscribe {
+    display: flex;
+    gap: 24px;
+}
+
+.fotter-form-text {
+    font-weight: 500;
+    line-height: 1, 5;
+    color: var(--primary-write);
+
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.footer-form-input {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--secondary-clr-text);
+    width: 264px;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.footer-btn-subscribe {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1, 5;
+    letter-spacing: 0.04em;
+    color: var(--primary-write);
+    display: block;
+    padding: 8px 24px;
+    background-color: var(--blue-clr);
+    border: none;
+    border-radius: 4px;
+    transition: background-color var(--transition-dur-and-funct);
+}
+
+.footer-btn-subscribe:hover,
+.footer-btn-subscribe:focus {
+    background-color: var(--action-clr);
 }
 
 /*================== Page PORTFOLIO ======================= */
