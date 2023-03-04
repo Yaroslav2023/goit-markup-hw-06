@@ -481,10 +481,10 @@ body {
 .footer-btn-subscribe {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1, 5;
+    line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--primary-write);
-    display: block;
+    display: flex;
     padding: 8px 24px;
     background-color: var(--blue-clr);
     border: none;
@@ -495,6 +495,17 @@ body {
 .footer-btn-subscribe:hover,
 .footer-btn-subscribe:focus {
     background-color: var(--action-clr);
+}
+
+.footer-btn-subscribe::after {
+    display: inline-flex;
+    content: "";
+    fill: var(--primary-write);
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+    background-image: url("../images/icon-button.svg");
+    background-size: contain;
 }
 
 /*================== Page PORTFOLIO ======================= */
@@ -661,6 +672,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    padding-top: 72px;
+    padding-left: 24px;
+    padding-right: 24px;
     transform: translate(-50%, -50%);
     width: 408px;
     height: 576px;
@@ -698,4 +712,178 @@ body {
 .modal-close-button:hover .modal-close-btn-icon,
 .modal-close-button:focus .modal-close-btn-icon {
     fill: var(--primary-write);
+}
+
+.modal-form {}
+
+.modal-text-descr {
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--secondary-clr-text);
+    margin-bottom: 16px;
+}
+
+.modal-label-name {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.modal-name-wrap {
+    position: relative;
+}
+
+.form-input-name {
+    width: 100%;
+    padding-left: 38px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    transition: border var(--transition-dur-and-funct);
+}
+
+.form-input-name:focus {
+    border: 1px solid var(--blue-clr)
+}
+
+.modal-icon-name {
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    transform: translateY(-50%);
+}
+
+.form-input-name:focus~.modal-icon-name {
+    fill: var(--blue-clr);
+}
+
+.modal-label-phone {
+    display: inline-block;
+    display: inline-block;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.modal-phone-wrap {
+    position: relative;
+}
+
+.form-input-phone {
+    width: 100%;
+    padding-left: 38px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    transition: border var(--transition-dur-and-funct);
+}
+
+.form-input-phone:focus {
+    border: 1px solid var(--blue-clr)
+}
+
+.modal-icon-phone {
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    transform: translateY(-50%);
+    transition: fill var(--transition-dur-and-funct);
+}
+
+.form-input-phone:focus~.modal-icon-phone {
+    fill: var(--blue-clr);
+}
+
+.modal-label-email {
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.modal-email-wrap {
+    position: relative;
+}
+
+.form-input-email {
+    width: 100%;
+    padding-left: 38px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    transition: border var(--transition-dur-and-funct);
+}
+
+.form-input-email:focus {
+    border: 1px solid var(--blue-clr)
+}
+
+.modal-icon-email {
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translateY(-50%);
+}
+
+.form-input-email:focus~.modal-icon-email {
+    fill: var(--blue-clr);
+}
+
+.modal-label-comment {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.modal-textarea-coment {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    padding: 8px 16px;
+    margin-bottom: 16px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    transition: border var(--transition-dur-and-funct);
+}
+
+.modal-textarea-coment::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-textarea-coment:focus {
+    border: 1px solid var(--blue-clr)
 }
