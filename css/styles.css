@@ -677,7 +677,6 @@ body {
     padding-right: 24px;
     transform: translate(-50%, -50%);
     width: 408px;
-    height: 576px;
     background-color: #FCFCFC;
     border-radius: 4px;
 
@@ -886,4 +885,64 @@ body {
 
 .modal-textarea-coment:focus {
     border: 1px solid var(--blue-clr)
+}
+
+.form-checkbox {}
+
+.form-checkbox:checked+.label-policy::before {
+    background-color: var(--blue-clr);
+    background-image: url(../images/icon-checkbox.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+
+}
+
+.form-checkbox:focus+.label-policy::before {
+    outline: 2px solid rgba(0, 0, 255, 0.5);
+}
+
+.label-policy {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #757575;
+}
+
+.label-policy-link {
+    color: var(--action-clr);
+}
+
+.label-policy::before {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px solid var(--secondary-clr-text);
+    border-radius: 2px;
+}
+
+.form-button-send {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    padding: 16px 32px;
+    justify-content: center;
+    width: 169px;
+    color: var(--primary-write);
+    background-color: var(--blue-clr);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    transition: background-color var(--transition-dur-and-funct);
+}
+
+.form-button-send:hover,
+.form-button-send:focus {
+    background-color: var(--action-clr);
 }
