@@ -473,6 +473,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
     background-color: var(--secondary-clr-text);
     width: 264px;
+    height: 40px;
     padding: 8px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -485,6 +486,7 @@ body {
     letter-spacing: 0.04em;
     color: var(--primary-write);
     display: flex;
+    height: 40px;
     padding: 8px 24px;
     background-color: var(--blue-clr);
     border: none;
@@ -675,6 +677,7 @@ body {
     padding-top: 72px;
     padding-left: 24px;
     padding-right: 24px;
+    padding-bottom: 24px;
     transform: translate(-50%, -50%);
     width: 408px;
     background-color: #FCFCFC;
@@ -740,6 +743,7 @@ body {
 }
 
 .form-input-name {
+    height: 40px;
     width: 100%;
     padding-left: 38px;
     padding-top: 11px;
@@ -749,7 +753,7 @@ body {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
-    transition: border var(--transition-dur-and-funct);
+    transition: fill var(--transition-dur-and-funct), border var(--transition-dur-and-funct);
 }
 
 .form-input-name:focus {
@@ -758,6 +762,7 @@ body {
 
 .modal-icon-name {
     position: absolute;
+    fill: var(--secondary-clr-text);
     top: 50%;
     left: 19px;
     transform: translateY(-50%);
@@ -783,6 +788,7 @@ body {
 }
 
 .form-input-phone {
+    height: 40px;
     width: 100%;
     padding-left: 38px;
     padding-top: 11px;
@@ -791,7 +797,7 @@ body {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
-    transition: border var(--transition-dur-and-funct);
+    transition: fill var(--transition-dur-and-funct), border var(--transition-dur-and-funct);
 }
 
 .form-input-phone:focus {
@@ -800,6 +806,7 @@ body {
 
 .modal-icon-phone {
     position: absolute;
+    fill: var(--secondary-clr-text);
     top: 50%;
     left: 19px;
     transform: translateY(-50%);
@@ -825,6 +832,7 @@ body {
 }
 
 .form-input-email {
+    height: 40px;
     width: 100%;
     padding-left: 38px;
     padding-top: 11px;
@@ -834,7 +842,7 @@ body {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
-    transition: border var(--transition-dur-and-funct);
+    transition: fill var(--transition-dur-and-funct), border var(--transition-dur-and-funct);
 }
 
 .form-input-email:focus {
@@ -843,6 +851,7 @@ body {
 
 .modal-icon-email {
     position: absolute;
+    fill: var(--secondary-clr-text);
     top: 50%;
     left: 17px;
     transform: translateY(-50%);
@@ -853,6 +862,7 @@ body {
 }
 
 .modal-label-comment {
+    display: inline-block;
     margin-top: 8px;
     margin-bottom: 4px;
     font-size: 12px;
@@ -930,10 +940,11 @@ body {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 24px;
+
     padding: 16px 32px;
     justify-content: center;
     width: 169px;
+    height: 56px;
     color: var(--primary-write);
     background-color: var(--blue-clr);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
